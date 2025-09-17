@@ -10,7 +10,7 @@ public class ControleFinanceiro {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        double Saldo=0, Receita =0, Despesa=0;
+        double Saldo, Receita =0, Despesa=0;
 
         System.out.print("----- Orcamento Pessoal -----\n");
         System.out.print("----- Receitas -----\n");
@@ -25,7 +25,7 @@ public class ControleFinanceiro {
         System.out.print("Digite a quantidade de despesas no mês: ");
         double qtd_despesas = input.nextDouble();
 
-        for (int i = 1; i <= qtd_receita; i++) {
+        for (int i = 1; i <= qtd_despesas; i++) {
             System.out.print("Digite a " + i + "° despesa do mês: ");
             Despesa +=input.nextDouble();
         }
