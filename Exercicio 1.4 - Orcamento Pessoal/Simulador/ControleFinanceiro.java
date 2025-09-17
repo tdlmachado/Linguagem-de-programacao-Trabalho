@@ -12,8 +12,8 @@ public class ControleFinanceiro {
 
         double Saldo, Receita =0, Despesa=0;
 
-        System.out.print("----- Orcamento Pessoal -----\n");
-        System.out.print("----- Receitas -----\n");
+        System.out.print("---- Orcamento Pessoal ----\n");
+        System.out.print("\t --> Receitas <--\n");
         System.out.print("Digite a quantidade de receitas no mês: ");
         double qtd_receita = input.nextDouble();
 
@@ -21,7 +21,7 @@ public class ControleFinanceiro {
             System.out.print("Digite a " + i + "° receita do mês: ");
             Receita +=input.nextDouble();
         }
-        System.out.print("----- Despesas -----\n");
+        System.out.print("\t --> Despesas <-- \n");
         System.out.print("Digite a quantidade de despesas no mês: ");
         double qtd_despesas = input.nextDouble();
 
@@ -33,5 +33,11 @@ public class ControleFinanceiro {
         Saldo = Receita - Despesa;
 
         System.out.printf("\nSaldo: R$ %.2f\n", Saldo);
+        if (Saldo < 0) {
+            System.out.println("--> Seu saldo está negativo, tome cuidado com as finanças!");
+        }else  {
+            System.out.printf("--> Parabéns seu saldo está positivo, continue assim!");
+        }
+
     }
 }
