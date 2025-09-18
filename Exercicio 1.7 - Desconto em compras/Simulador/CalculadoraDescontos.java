@@ -12,6 +12,7 @@ public class CalculadoraDescontos {
 
         if (Valor > 0 && Valor < 100) {
             System.out.print("Sua compra não se enquadra em nosso desconto!");
+            System.out.print("Valor final: "+Valor);
 
         }else if (Valor >= 100 && Valor < 500) {
             ValorFinal = Valor + (Valor * 0.1);
